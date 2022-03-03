@@ -1,0 +1,49 @@
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wraper{
+    width: 80%;
+    margin: 0 auto;
+}
+.wrap{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.slika{
+    background-color: #8686f6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.slika img{
+    max-width: 100%;
+}
+.tekst{
+    text-align: center;
+    background-color: #f2f2f2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 3px;
+}
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .wrap{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width:767px){
+    .wraper{
+        max-width: 300px; 
+    }
+    .wrap{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    h1{
+        text-align: center;
+    }
+    .tekst{
+        padding: 8px;
+    }
+}
